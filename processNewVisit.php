@@ -10,7 +10,7 @@ $et = $_POST['cost'];
 
 $sql = "INSERT INTO visit (visit_date,visit_time,doctor_id,patient_id,cost) values ('$vd','$vt','$di','$st','$et')";
 
-echo $sql;
+//echo $sql;
 
 if (mysqli_query($conn, $sql)) {
   echo "<br>New record created successfully";
