@@ -1,9 +1,12 @@
 <?php
+
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "Pass4!!";
 $dbname = "gp_surgery";
-$port = 3307;
+$port = 3306;
+
+date_default_timezone_set('Europe/Dublin');
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname, $port);
