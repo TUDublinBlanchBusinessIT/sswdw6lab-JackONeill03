@@ -1,12 +1,12 @@
 <?php
 
+include("dbcon.php");
+
 $vd = $_POST['visitDate']; 
 $vt = $_POST['visitTime']; 
 $di = (int)$_POST['doctorid']; 
 $st = (int)$_POST['patientid']; 
 $et = $_POST['cost'];
-
-include("dbcon.php");
 
 $sql = "INSERT INTO visit (visit_date,visit_time,doctor_id,patient_id,cost) values ('$vd','$vt','$di','$st','$et')";
 
